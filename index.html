@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intro Page</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      text-align: center;
+      margin: 0 auto;
+      border-radius: 15px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      padding: 15px;
+      font-size: 24px;
+      border: none;
+      border-radius: 30px;
+      outline: none;
+      width: 70%;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 15px 25px;
+      font-size: 24px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .news-section {
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      text-align: left;
+      border-radius: 15px;
+    }
+
+    .news-section h2 {
+      margin-top: 0;
+    }
+
+    .news-section p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .search-box {
+        flex-direction: column;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="https://www.google.com/search" method="get" target="_blank" class="search-box">
+      <input type="text" name="q" placeholder="Search...">
+      <input type="submit" value="Go">
+    </form>
+
+    <div class="news-section">
+      <h2>Latest News</h2>
+      <p>Punjab Bathinda Military Station Firing: Army personnel killed, cantonment closed</p>
+      <p>For more information, <a href="https://www.indiatoday.in/india/story/punjab-bathinda-military-station-firing-news-live-up">Click here</a>
